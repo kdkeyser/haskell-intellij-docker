@@ -1,0 +1,37 @@
+2015-06-17 18:49:04,998 [      0]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2015-06-17 18:49:05,004 [      6]   INFO -        #com.intellij.idea.Main - IDE: IntelliJ IDEA (build #IC-141.1010.3, 12 May 2015 00:00) 
+2015-06-17 18:49:05,004 [      6]   INFO -        #com.intellij.idea.Main - OS: Linux (3.13.0-37-generic, amd64) 
+2015-06-17 18:49:05,004 [      6]   INFO -        #com.intellij.idea.Main - JRE: 1.7.0_79-b14 (Oracle Corporation) 
+2015-06-17 18:49:05,004 [      6]   INFO -        #com.intellij.idea.Main - JVM: 24.79-b02 (OpenJDK 64-Bit Server VM) 
+2015-06-17 18:49:05,007 [      9]   INFO -        #com.intellij.idea.Main - JVM Args: -Xbootclasspath/a:/opt/idea/bin/../lib/boot.jar -Xms128m -Xmx750m -XX:MaxPermSize=350m -XX:ReservedCodeCacheSize=225m -XX:+UseConcMarkSweepGC -XX:SoftRefLRUPolicyMSPerMB=50 -ea -Dsun.io.useCanonCaches=false -Djava.net.preferIPv4Stack=true -Dawt.useSystemAAFontSettings=lcd -Djb.vmOptionsFile=/opt/idea/bin/idea64.vmoptions -XX:ErrorFile=/root/java_error_in_IDEA_%p.log -Djb.restart.code=88 -Didea.paths.selector=IdeaIC14 
+2015-06-17 18:49:05,029 [     31]   INFO -        #com.intellij.idea.Main - JNA library loaded (64-bit) in 22 ms 
+2015-06-17 18:50:12,870 [  67872]   INFO - .intellij.idea.IdeaApplication - WM detected: Mutter (Muffin) 
+2015-06-17 18:50:12,872 [  67874]   INFO - llij.openapi.wm.impl.X11UiUtil - impersonated WM: MUTTER_WM 
+2015-06-17 18:50:13,213 [  68215]   INFO - llij.ide.plugins.PluginManager - 30 plugins initialized in 267 ms 
+2015-06-17 18:50:13,213 [  68215]   INFO - llij.ide.plugins.PluginManager - Loaded bundled plugins: CVS Integration (11), Copyright (8.1), EditorConfig (1.0), Git Integration (8.1), GitHub, Groovy (9.0), HaskForce (0.3-beta.20), I18n for Java, IDEA CORE, IntelliLang (8.0), Java Bytecode Decompiler (0.1), JavaFX (1.0), Properties Support, Subversion Integration (1.1), Task Management (1.0), Terminal (0.1), XPathView + XSLT Support (4), XSLT-Debugger (1.4), hg4idea (10.0) 
+2015-06-17 18:50:13,214 [  68216]   INFO - llij.ide.plugins.PluginManager - Disabled plugins: Android Support (10.1.1.0), Ant Support (1.0), Bytecode Viewer (0.1), Coverage, Eclipse Integration (3.0), Gradle, JUnit (1.0), Maven Integration, Plugin DevKit (1.0), TestNG-J (8.0), UI Designer 
+2015-06-17 18:50:13,574 [  68576]   INFO - ellij.vfs.persistent.FSRecords - Marking VFS as corrupted 
+2015-06-17 18:50:13,575 [  68577]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=200; buffer=10; max=739246080 
+2015-06-17 18:50:13,599 [  68601]   INFO - api.vfs.impl.local.FileWatcher - Starting file watcher: /opt/idea/bin/fsnotifier64 
+2015-06-17 18:50:13,607 [  68609]   INFO - api.vfs.impl.local.FileWatcher - Native file watcher is operational. 
+2015-06-17 18:50:13,831 [  68833]   INFO - .history.utils.LocalHistoryLog - local history version mismatch (was: 0, expected: 5), rebuilding... 
+2015-06-17 18:50:13,831 [  68833]   INFO - .history.utils.LocalHistoryLog - FS has been rebuild, rebuilding local history... 
+2015-06-17 18:50:14,316 [  69318]   INFO - rains.ide.BuiltInServerManager - built-in server started, port 63342 
+2015-06-17 18:50:14,712 [  69714]   INFO - ellij.project.impl.ProjectImpl - 19 project components initialized in 240 ms 
+2015-06-17 18:50:14,712 [  69714]   INFO - le.impl.ModuleManagerComponent - 0 module(s) loaded in 0 ms 
+2015-06-17 18:50:14,939 [  69941]   INFO - tellij.xml.Html5SchemaProvider - HTML5_SCHEMA_LOCATION = /opt/idea/lib/idea.jar!/resources/html5-schema/html5.rnc 
+2015-06-17 18:50:14,939 [  69941]   INFO - tellij.xml.Html5SchemaProvider - XHTML5_SCHEMA_LOCATION = /opt/idea/lib/idea.jar!/resources/html5-schema/xhtml5.rnc 
+2015-06-17 18:50:14,939 [  69941]   INFO - tellij.xml.Html5SchemaProvider - CHARS_DTD_LOCATION = /opt/idea/lib/idea.jar!/resources/html5-schema/html5chars.ent 
+2015-06-17 18:50:14,973 [  69975]   INFO - pl.stores.ApplicationStoreImpl - 80 application components initialized in 1739 ms 
+2015-06-17 18:50:14,978 [  69980]   INFO - .intellij.idea.IdeaApplication - App initialization took 74582 ms 
+2015-06-17 18:50:25,852 [  80854]   INFO - Types.impl.FileTypeManagerImpl - FileTypeManager: 0 auto-detected files
+Elapsed time on auto-detect: 0 ms 
+2015-06-17 18:50:25,856 [  80858]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 
+2015-06-17 18:50:25,857 [  80859]   INFO - il.indexing.FileBasedIndexImpl - START INDEX SHUTDOWN 
+2015-06-17 18:50:25,867 [  80869]   INFO - il.indexing.FileBasedIndexImpl - END INDEX SHUTDOWN 
+2015-06-17 18:50:25,867 [  80869]   INFO - stubs.SerializationManagerImpl - START StubSerializationManager SHUTDOWN 
+2015-06-17 18:50:25,867 [  80869]   INFO - stubs.SerializationManagerImpl - END StubSerializationManager SHUTDOWN 
+2015-06-17 18:50:26,031 [  81033]   WARN - api.vfs.impl.local.FileWatcher - Watcher terminated with exit code 0 
+2015-06-17 18:50:26,031 [  81033]   INFO - newvfs.persistent.PersistentFS - VFS dispose started 
+2015-06-17 18:50:26,034 [  81036]   INFO - newvfs.persistent.PersistentFS - VFS dispose completed 
+2015-06-17 18:50:26,036 [  81038]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE SHUTDOWN ------------------------------------------------------ 

@@ -1,0 +1,11 @@
+<application>
+  <component name="PropertiesComponent">
+    <property name="log.debug.categories" value="" />
+    <property name="DefaultHtmlDoctype.MigrateToHtml5" value="true" />
+    <property name="DefaultHtmlDoctype.Refreshed" value="1" />
+    <property name="installation.uid" value="e527bc60-ff32-4aa5-85a3-23cf99f3c4a6" />
+    <property name="project.wizard.group" value="HASKELL_MODULE" />
+    <property name="default.storage.format" value=".idea (directory based)" />
+    <property name="project.wizard.template" value="Java" />
+  </component>
+</application>

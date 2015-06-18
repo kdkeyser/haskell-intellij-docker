@@ -1,0 +1,11 @@
+org.jetbrains.android
+Coverage
+org.jetbrains.plugins.gradle
+ByteCodeViewer
+org.jetbrains.idea.maven
+TestNG-J
+AntSupport
+JUnit
+DevKit
+com.intellij.uiDesigner
+org.jetbrains.idea.eclipse
