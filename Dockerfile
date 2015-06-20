@@ -14,9 +14,9 @@ ENV HASKFORCE_VERSION v0.3-beta.20
 ENV HASKFORCE_ZIP intellij-haskforce-$HASKFORCE_VERSION.zip
 ENV GHC_VERSION 7.8.4
 ENV GHC_TXZ ghc-$GHC_VERSION-x86_64-unknown-linux-deb7.tar.xz 
-ENV CABAL_VERSION 1.22.4.0
+ENV CABAL_VERSION 1.20.0.3
 ENV CABAL_TGZ Cabal-$CABAL_VERSION.tar.gz
-ENV CABAL_INSTALL_VERSION 1.22.6.0
+ENV CABAL_INSTALL_VERSION 1.20.1.0
 ENV CABAL_INSTALL_TGZ cabal-install-$CABAL_INSTALL_VERSION.tar.gz
 
 RUN apt-get install make libgmp3-dev wget -y
@@ -37,7 +37,7 @@ ADD http://localhost/cabal/release/cabal-install-$CABAL_INSTALL_VERSION/$CABAL_I
 RUN tar xf /tmp/$CABAL_INSTALL_TGZ -C /tmp
 RUN cd /tmp/cabal-install-$CABAL_INSTALL_VERSION && ./bootstrap.sh --global
 
-ADD cabal_config /root/.cabal/config
+ADD cabal_config_$GHC_VERSION /root/.cabal/config
 RUN cabal update
 RUN cabal install --global happy alex hlint ghc-mod stylish-haskell
 
@@ -48,5 +48,6 @@ RUN mv /opt/idea-IC-* /opt/idea
 ADD https://github.com/carymrobbins/intellij-haskforce/releases/download/$HASKFORCE_VERSION/$HASKFORCE_ZIP /opt/
 RUN unzip /opt/$HASKFORCE_ZIP -d /opt/idea/plugins
 ADD idea-settings/ /root
+
 
 
