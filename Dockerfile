@@ -14,11 +14,11 @@ ENV IDEA_VERSION 14.1.3
 ENV IDEA_TGZ ideaIC-$IDEA_VERSION.tar.gz
 ENV HASKFORCE_VERSION v0.3-beta.20
 ENV HASKFORCE_ZIP intellij-haskforce-$HASKFORCE_VERSION.zip
-ENV GHC_VERSION 7.8.4
+ENV GHC_VERSION 7.10.1
 ENV GHC_TXZ ghc-$GHC_VERSION-x86_64-unknown-linux-deb7.tar.xz 
-ENV CABAL_VERSION 1.20.0.3
+ENV CABAL_VERSION 1.22.4.0
 ENV CABAL_TGZ Cabal-$CABAL_VERSION.tar.gz
-ENV CABAL_INSTALL_VERSION 1.20.1.0
+ENV CABAL_INSTALL_VERSION 1.22.6.0
 ENV CABAL_INSTALL_TGZ cabal-install-$CABAL_INSTALL_VERSION.tar.gz
 
 # GHC
@@ -38,10 +38,16 @@ RUN tar xf /tmp/$CABAL_INSTALL_TGZ -C /tmp
 RUN cd /tmp/cabal-install-$CABAL_INSTALL_VERSION && ./bootstrap.sh --global
 
 # Default cabal config, using Stackage
-ADD cabal_config_$GHC_VERSION /root/.cabal/config
+ADD cabal_config /root/.cabal/config
 RUN cabal update
+
+ENV PATH $PATH:/root/.cabal/bin
 # Some parsers/tools needed by the Haskell IntelliJ plugin
-RUN cabal install --global happy alex hlint ghc-mod stylish-haskell
+RUN cabal install happy alex hlint stylish-haskell
+
+RUN cd /tmp && git clone https://github.com/DanielG/cabal-helper.git && cd cabal-helper && cabal install
+
+RUN cd /tmp && git clone https://github.com/kazu-yamamoto/ghc-mod.git && cd ghc-mod && cabal install
 
 # IntelliJ
 ADD http://download.jetbrains.com/idea/$IDEA_TGZ /opt/

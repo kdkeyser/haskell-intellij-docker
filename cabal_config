@@ -13,7 +13,7 @@
 
 -- require-sandbox: False
 -- ignore-sandbox: False
-remote-repo: stackage-lts-2.14:http://www.stackage.org/lts-2.14
+remote-repo: stackage-nightly-2015-06-22:http://www.stackage.org/nightly-2015-06-22
 remote-repo-cache: /root/.cabal/packages
 -- local-repo:
 -- logs-dir:
