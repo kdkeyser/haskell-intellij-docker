@@ -38,7 +38,7 @@ RUN tar xf /tmp/$CABAL_INSTALL_TGZ -C /tmp
 RUN cd /tmp/cabal-install-$CABAL_INSTALL_VERSION && ./bootstrap.sh --global
 
 # Default cabal config, using Stackage
-ADD cabal_config_$GHC_VERSION /root/.cabal/config
+ADD cabal_config /root/.cabal/config
 RUN cabal update
 # Some parsers/tools needed by the Haskell IntelliJ plugin
 RUN cabal install --global happy alex hlint ghc-mod stylish-haskell
