@@ -17,6 +17,8 @@ Starting IntelliJ through /opt/idea/bin/idea.sh, then choosing "Open" and select
 "/root/haskell-projects/base-project" directory, will open the project.
 
 To compile, press Ctrl-F9
+
 To run, press Shift-F10
+
 To get type info, press Alt-= (e.g. on putStrLn will show String -> IO () )
 
