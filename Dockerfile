@@ -56,5 +56,7 @@ RUN unzip /opt/$HASKFORCE_ZIP -d /opt/idea/plugins
 # Copy default IntelliJ Haskell settings, to limit amount of manual setup
 ADD idea-settings/ /root
 
+# Copy base project
+ADD base-project/ /root/shared
 
 
