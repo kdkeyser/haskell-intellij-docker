@@ -41,7 +41,8 @@ RUN cd /tmp/cabal-install-$CABAL_INSTALL_VERSION && ./bootstrap.sh --global
 ADD cabal_config /root/.cabal/config
 RUN cabal update
 # Some parsers/tools needed by the Haskell IntelliJ plugin
-RUN cabal install --global happy alex hlint ghc-mod stylish-haskell
+RUN cabal install happy alex hlint ghc-mod stylish-haskell
+ENV PATH $PATH:/root/.cabal/bin
 
 # IntelliJ
 ADD http://download.jetbrains.com/idea/$IDEA_TGZ /opt/
