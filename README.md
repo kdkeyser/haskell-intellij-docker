@@ -11,10 +11,8 @@ to your host system.
 To run the docker, do: ./run.bash haskell-intellij
 
 In /root/haskell-projects, there is a directory base-project which contains a configured 
-"Hello World" style project.
-
-Starting IntelliJ through /opt/idea/bin/idea.sh, then choosing "Open" and selection the 
-"/root/haskell-projects/base-project" directory, will open the project.
+"Hello World" style project. Start IntelliJ through /opt/idea/bin/idea.sh, then choose 
+"Open" and select the "/root/haskell-projects/base-project" directory.
 
 To compile, press Ctrl-F9
 
